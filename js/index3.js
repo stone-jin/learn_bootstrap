@@ -4,6 +4,8 @@
 $(document).ready(function(){
 
    $('#side-menu').metisMenu();
+
+    $('#example').dataTable();
 });
 
 $('.test_btn').click(function(){

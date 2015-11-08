@@ -44,7 +44,17 @@ body{
     overflow-x: hidden;
 }
 
-.left{
+.row{
+    margin: 0;
+    padding: 0;
+}
+
+.row .col-sm-12{
+    margin: 0;
+    padding: 0;
+}
+
+body > .left{
     width: 220px;
     position: absolute;
     min-height: 1000px;
@@ -137,9 +147,7 @@ body > .right{
 
 .right .navbar-static-top{
     background: #f3f3f4;
-    padding-top: 0;
     margin-bottom: 0;
-    height: 60px;
 }
 
 .right .navbar-static-top .navbar-side-btn{
@@ -151,6 +159,7 @@ body > .right{
 .right .navbar-static-top .navbar-form-custom{
     padding: 0;
     margin-top: 4px;
+    margin-bottom: 0;
     height: 50px;
 }
 
@@ -166,14 +175,66 @@ body > .right{
     margin-top: 3px;
 }
 
+.right .page_content_header{
+    line-height: 1.0000;
+}
+
 .right .title-one{
-    height: 300px;
+    height: 90px;
     background: #ffffff;
 }
 
-.right .title-one .title-one-left{
-    padding-left: 50px;
-    padding-top: 20px;
+.right .title-one-left{
+    padding-left: 30px;
+}
+
+ol li {
+    list-style-type: none;
+}
+
+.right .title-one-left ol li{
+    float: left;
+    margin-right: 10px;
+}
+
+.right .title-one-left ol li a{
+    text-decoration: none;
+    color: #676A6C;
+}
+
+.right .page-content-2{
+    background: #ffffff;
+    min-height: 610px;
+    margin: 20px 27px 0 27px;
+    border-top: 4px solid #E7EAEC;
+}
+
+.right .page-content-2 .header{
+    border-bottom: 1px solid #E7EAEC;
+    min-height: 50px;
+    padding-top: 12px;
+}
+
+.right .page-content-2 .header .left > *{
+    float: left;
+}
+
+.right .page-content-2 .header .left > h3{
+    margin-left: 10px;
+}
+
+.right .page-content-2 .header .left > span{
+    margin-left: 10px;
+    margin-top: 3px;
+}
+
+.right .page-content-2 .header .right{
+    float: right;
+}
+
+.right .page-content-2 .header .right > li{
+    float: left;
+    margin-right: 15px;
 }
 
 .btn-primary,
@@ -181,4 +242,15 @@ body > .right{
 .btn-primary:focus{
     background: #1AB394;
     border-color: #1AB394;
+}
+
+table.dataTable thead th,
+table.dataTable thead td,
+table.dataTable thead tr{
+    border-bottom: 1px solid #DDD;
+}
+
+table.dataTable tfoot th,
+table.dataTable tfoot td{
+    border-top: 1px solid #DDD;
 }
