@@ -53,7 +53,7 @@ body{
 .user_info{
     width: 100%;
     height: 156px;
-    padding: 30px 0 5px 30px;
+    padding: 25px 30px;
     background: url("patterns/header-profile.png") no-repeat;
 }
 
@@ -64,8 +64,30 @@ body{
     border-left: 4px solid #19aa8d;
 }
 
+.left > ul > li a .first_one{
+    margin-left: 5px;
+    margin-right: 15px;
+}
+
+.left > ul > li a .second_one{
+    float: right;
+    padding: 2px 10px 0 0;
+}
+
+.left > ul >li a .second_one:before{
+    content: "\f054";
+}
+
 .left > ul > li a{
     background: #2F4050;
+}
+
+.left > ul > li .user_info ul a{
+    background: white;
+}
+
+.left > ul > .active > a .second_one:before{
+    content: "\f078";
 }
 
 .left ul .nav-second-level a{
@@ -76,12 +98,87 @@ body{
     padding-left: 80px;
 }
 
-.right{
-    width: 100%;
+.mini-navbar .navbar-default li a span{
+    display: none;
+}
+
+.mini-navbar .navbar-default li a .second_one{
+    display: none;
+}
+
+.mini-navbar .user_info{
+    display: none;
+}
+
+.mini-navbar .navbar-default li {
+     position: relative;
+ }
+.mini-navbar .navbar-default > li ul {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    min-width: 200px;
+    display: none;
+}
+.mini-navbar .navbar-default li:hover > ul,
+.mini-navbar .navbar-default li:hover > ul.collapse {
+    display: block !important;
+    height: auto !important;
+    z-index: 1000;
+    background: #444;
+    visibility: visible;
+}
+
+body > .right{
     min-height: 1000px;
     margin-left: 220px;
     background: #f3f3f4;
 }
 
+.right .navbar-static-top{
+    background: #f3f3f4;
+    padding-top: 0;
+    margin-bottom: 0;
+    height: 60px;
+}
 
+.right .navbar-static-top .navbar-side-btn{
+    margin-left: 20px;
+    margin-top: 12px;
+    padding: 0;
+}
 
+.right .navbar-static-top .navbar-form-custom{
+    padding: 0;
+    margin-top: 4px;
+    height: 50px;
+}
+
+.right .navbar-static-top .navbar-form-custom .form-control,
+.right .navbar-static-top .navbar-form-custom .form-control:hover{
+    width: 200px;
+    border: none;
+    box-shadow: none;
+    background: transparent none repeat scroll 0 0;
+}
+
+.right .navbar-right-top{
+    margin-top: 3px;
+}
+
+.right .title-one{
+    height: 300px;
+    background: #ffffff;
+}
+
+.right .title-one .title-one-left{
+    padding-left: 50px;
+    padding-top: 20px;
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:focus{
+    background: #1AB394;
+    border-color: #1AB394;
+}
