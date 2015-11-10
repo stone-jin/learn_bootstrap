@@ -6,6 +6,8 @@ $(document).ready(function(){
    $('#side-menu').metisMenu();
 
     $('#example').dataTable();
+
+    $("#summernote").summernote();
 });
 
 $('.test_btn').click(function(){
@@ -39,4 +41,9 @@ $(".close_up").click(function(){
         });
         close_up = 0;
     }
+});
+
+$(".message_body").click(function(){
+    alert($("#summernote").summernote('code'));
+    $('.body_4').html($("#summernote").summernote('code'));
 });
