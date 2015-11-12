@@ -60,6 +60,30 @@ body{
 .page_content{
     min-height: 1000px;
     margin-left: 220px;
+    padding: 0 15px 0 15px;
     background: #f3f3f4;
+}
+
+.page_content .margin-bottom-none{
+    margin-bottom: 0;
+}
+
+.page_content .navbar-static-top-btn{
+    float: left;
+    margin-left: 30px;
+}
+
+.page_content .navbar-form-left{
+    float: left;
+}
+
+.page_content .white-bg{
+    background: #ffffff;
+    padding: 20px;
+}
+
+.page_content .page_content_1_content{
+    padding-left: 20px;
+    border-left: 8px solid #EEEEEE;
 }
 
